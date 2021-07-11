@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: 'Open Sans', sans-serif;
+  --white: hsl(0, 0%, 100%);
+}
+
+.nav {
+  display: flex;
+  background-color: hsl(218, 28%, 13%);
+  justify-content: space-between;
+  align-items: center;
+  padding: 3em;
+}
+
+.nav__linksContainer {
+}
+
+.nav__link {
+  color: var(--white);
+  text-decoration: none;
+  margin-left: 3rem;
+}
+
+.nav__link:first-child {
+  margin-left: 0;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
