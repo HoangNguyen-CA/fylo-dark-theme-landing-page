@@ -157,7 +157,163 @@ header {
   margin-right: 0.5em;
 }
 
-/* Testimonials  */
+/* quotes  */
+
+.quotes {
+  background-color: var(--bg-main);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 0;
+}
+
+.quotes__inner {
+  display: flex;
+  position: relative;
+  z-index: 1;
+}
+
+.quotes__quoteImg {
+  position: absolute;
+  left: 10px;
+  top: -35px;
+}
+
+.quote {
+  font-size: 1.1rem;
+
+  background-color: var(--bg-testimonial);
+  margin: 0 20px;
+  padding: 2em;
+  max-width: 450px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.quote::after {
+  content: '';
+  position: absolute;
+  z-index: -10;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+
+  background-color: var(--bg-main-light);
+  left: 7px;
+  top: 7px;
+}
+
+.quote__desc {
+  margin-top: 2em;
+}
+
+.quote__profile {
+  display: flex;
+  margin-top: 2em;
+  align-items: center;
+}
+
+.quote__profile__imageContainer {
+  width: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 10px;
+  padding: 0;
+}
+
+.quote__profile__imageContainer img {
+  display: block;
+  width: 100%;
+
+  object-fit: cover;
+  object-position: center;
+}
+
+.quote__profile__main {
+}
+
+.quote__profile__name {
+  margin-bottom: 0.2em;
+  font-weight: 600;
+}
+
+.quote__profile__position {
+  font-size: 0.8rem;
+}
+
+/* Signup */
+
+.signup {
+  padding: 100px 0;
+  background: var(--bg-main);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.signup::after {
+  content: '';
+  width: 100%;
+  height: 50%;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  background-color: var(--bg-footer);
+  z-index: -1;
+}
+
+.signup__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-main-light);
+  border-radius: 10px;
+  padding: 3em 5%;
+  text-align: center;
+  max-width: 800px;
+  width: 90%;
+
+  box-shadow: 7px 7px rgba(0, 0, 0, 0.2);
+}
+
+.signup__header {
+  font-size: 2.5rem;
+  margin-bottom: 0.8em;
+  width: 100%;
+}
+
+.signup__desc {
+  line-height: 1.8em;
+  margin-bottom: 2em;
+  width: 100%;
+}
+
+.signup__form {
+  display: flex;
+  width: 100%;
+}
+
+.signup__form__input {
+  width: 100%;
+  margin-right: 2em;
+  border-radius: 1000px;
+  border: none;
+  font-size: 1.2rem;
+  padding: 1em 2em;
+}
+
+.signup__form__btn {
+  width: 24em;
+}
+
+/* Footer */
+
+.footer {
+  background-color: var(--bg-footer);
+}
 
 /* Button*/
 .btn {
