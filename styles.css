@@ -102,6 +102,11 @@ header {
   text-align: center;
 }
 
+.feat__imgContainer {
+  margin: 0 auto;
+  width: max-content;
+}
+
 .feat__header {
   margin-top: 1em;
 }
@@ -313,8 +318,81 @@ header {
 
 .footer {
   background-color: var(--bg-footer);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
+.footer__inner {
+  max-width: 1350px;
+}
+
+.footer__main {
+  margin-top: 2em;
+  display: flex;
+  margin-bottom: 8em;
+  width: 100%;
+}
+
+.footer__section {
+  margin-right: 100px;
+  width: auto;
+}
+.footer__section:last-child {
+  margin-right: 0;
+}
+
+.footer__section--1 {
+  display: flex;
+}
+
+.footer__section--1__imgContainer {
+  position: relative;
+  top: 10px;
+}
+
+.footer__section--1__desc {
+  margin-left: 20px;
+  line-height: 1.8em;
+}
+
+.footer__section--2__container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+.footer__section--2__container p {
+  display: flex;
+  margin-left: 20px;
+}
+
+.footer__section--3 {
+  list-style: none;
+}
+
+.footer__section--3__link,
+.footer__section--4__link {
+  margin-bottom: 1em;
+}
+
+.footer__section--3__link > a,
+.footer__section--4__link > a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.footer__section--4 {
+  list-style: none;
+}
+
+.footer__section--5 {
+  display: flex;
+}
+
+.footer__section--5 > * {
+  margin-left: 1em;
+}
 /* Button*/
 .btn {
   font-size: 1rem;
@@ -329,12 +407,8 @@ header {
   background: linear-gradient(to right, var(--colors-cyan), var(--colors-blue));
 }
 
-/* Attribution */
+/* misc */
 
-.attribution {
-  font-size: 11px;
-  text-align: center;
-}
-.attribution a {
-  color: hsl(228, 45%, 44%);
+div > img {
+  display: block;
 }
