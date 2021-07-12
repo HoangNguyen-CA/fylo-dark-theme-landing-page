@@ -111,6 +111,54 @@ header {
   line-height: 1.8em;
 }
 
+/* productive */
+
+.productive {
+  padding: 100px 0;
+  display: flex;
+  justify-content: center;
+  background-color: var(--bg-main);
+}
+
+.productive__container {
+  width: 50%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 30px;
+}
+
+.productive__imgContainer {
+  margin-left: auto;
+}
+
+.productive__header {
+  font-size: 2.8rem;
+}
+
+.productive__desc {
+  margin-top: 1em;
+  font-size: 1.2rem;
+}
+
+.productive__link {
+  width: max-content;
+  padding-bottom: 0.3em;
+  display: flex;
+  margin-top: 1.5em;
+  align-items: center;
+  border-bottom: 1px solid var(--colors-cyan);
+}
+
+.productive__link a {
+  font-size: 1.2rem;
+  color: var(--colors-cyan);
+  margin-right: 0.5em;
+}
+
+/* Testimonials  */
+
 /* Button*/
 .btn {
   font-size: 1rem;
