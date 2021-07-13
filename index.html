@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- displays site properly based on user's device -->
 
     <link
@@ -33,7 +33,7 @@
   </head>
   <body>
     <nav class="nav">
-      <img src="./images/logo.svg" alt="Logo" />
+      <img src="./images/logo.svg" alt="Logo" class="nav__logo" />
       <div class="nav__linksContainer">
         <a class="nav__link" href="#">Features</a>
         <a class="nav__link" href="#">Team</a>
@@ -41,16 +41,17 @@
       </div>
     </nav>
     <header>
-      <div><img src="./images/illustration-intro.png" alt="Intro Image" /></div>
+      <div class="header__imageContainer">
+        <img src="./images/illustration-intro.png" alt="Intro Image" />
+      </div>
 
       <h1 class="header__title">
-        All your files in one secure location, <br />
-        accessible anywhere.
+        All your files in one secure location, accessible anywhere.
       </h1>
       <p class="header__desc">
-        Fylo stores all your most important files in one secure location.<br />
-        Access them wherever you need, share and collaborate with <br />
-        friends family, and co-workers.
+        Fylo stores all your most important files in one secure location. Access
+        them wherever you need, share and collaborate with friends family, and
+        co-workers.
       </p>
       <button class="btn header__btn">Get Started</button>
     </header>
