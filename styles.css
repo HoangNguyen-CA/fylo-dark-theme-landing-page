@@ -247,9 +247,9 @@ header {
   font-size: 1.1rem;
 
   background-color: var(--bg-testimonial);
-  margin: 0 20px;
+  margin: 20px;
   padding: 2em;
-  max-width: 450px;
+  max-width: 21em;
   border-radius: 10px;
   position: relative;
 }
@@ -303,6 +303,16 @@ header {
 
 .quote__profile__position {
   font-size: 0.8rem;
+}
+
+@media only screen and (max-width: 800px) {
+  .quotes__inner {
+    flex-direction: column;
+  }
+
+  .quotes__quoteImg {
+    top: -10px;
+  }
 }
 
 /* Signup */
