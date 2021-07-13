@@ -241,7 +241,7 @@ header {
 .quotes__quoteImg {
   position: absolute;
   left: 10px;
-  top: -35px;
+  top: -20px;
 }
 
 .quote {
@@ -403,18 +403,26 @@ header {
 }
 
 .footer__inner {
-  max-width: 1350px;
-}
+  max-width: 1220px;
+  width: 90%;
 
-.footer__main {
   margin-top: 2em;
   display: flex;
-  margin-bottom: 8em;
+  margin-bottom: 5em;
   width: 100%;
+  justify-content: space-between;
+
+  flex-wrap: wrap;
+  padding: 1em;
+}
+
+.footer__imageContainer {
+  width: 100%;
+  margin-bottom: 2em;
 }
 
 .footer__section {
-  margin-right: 100px;
+  margin-right: 15px;
   width: auto;
 }
 .footer__section:last-child {
@@ -433,12 +441,13 @@ header {
 .footer__section--1__desc {
   margin-left: 20px;
   line-height: 1.8em;
+  max-width: 21em;
 }
 
 .footer__section--2__container {
   display: flex;
   align-items: center;
-  margin-bottom: 1em;
+  margin-bottom: 1.5em;
 }
 
 .footer__section--2__container p {
@@ -446,7 +455,8 @@ header {
   margin-left: 20px;
 }
 
-.footer__section--3 {
+.footer__section--3,
+.footer__section--4 {
   list-style: none;
 }
 
@@ -461,16 +471,8 @@ header {
   text-decoration: none;
 }
 
-.footer__section--4 {
-  list-style: none;
-}
-
 .footer__section--5 {
   display: flex;
-}
-
-.footer__section--5 > * {
-  margin-left: 1em;
 }
 
 .footer__section--5__iconContainer {
@@ -483,10 +485,34 @@ header {
   width: 35px;
   height: 35px;
   cursor: pointer;
+  margin-left: 1em;
 }
 
-.footer__section--5__iconContainer > i {
-  font-size: 3rem;
+@media only screen and (max-width: 800px) {
+  .footer__inner {
+    flex-direction: column;
+    width: 80%;
+    max-width: 450px;
+  }
+  .footer__section {
+    margin-right: 0;
+    margin-bottom: 15px;
+    width: auto;
+  }
+  .footer__section--1__desc {
+    margin-left: 20px;
+    line-height: 1.8em;
+    max-width: none;
+  }
+  .footer__section--3,
+  .footer__section--4,
+  .footer__section--5 {
+    margin-top: 30px;
+  }
+
+  .footer__section--5 {
+    justify-content: center;
+  }
 }
 /* Button*/
 .btn {
