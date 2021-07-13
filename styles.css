@@ -12,6 +12,7 @@ html {
 
   --white: hsl(0, 0%, 100%);
   --gray: hsl(0, 0%, 80%);
+
   --navbar-height: 120px;
 
   --colors-blue: hsl(198, 60%, 50%);
@@ -26,7 +27,7 @@ html {
 
 @media only screen and (max-width: 800px) {
   html {
-    font-size: 80%;
+    font-size: 12px;
   }
 }
 
@@ -42,6 +43,7 @@ html {
 }
 
 .nav__linksContainer {
+  display: block;
 }
 
 .nav__logo {
@@ -80,11 +82,11 @@ html {
 /* Header */
 header {
   background-color: var(--bg-main-light);
-  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2em 10%;
+  padding: 5em 100px;
+
   background-image: url('./images/bg-curvy-desktop.svg');
   background-repeat: no-repeat;
   background-position: bottom;
@@ -224,6 +226,8 @@ header {
 .productive__link a {
   font-family: 'Raleway', sans-serif;
 
+  text-decoration: none;
+
   font-size: 1.2rem;
   color: var(--colors-cyan);
   margin-right: 0.5em;
@@ -234,11 +238,12 @@ header {
 }
 
 .productive__link:hover {
-  color: white;
+  color: var(--white);
   border-bottom: 1px solid var(--white);
 }
 
 .productive__link:hover img {
+  color: var(--white); /* not working */
 }
 
 @media only screen and (max-width: 800px) {
@@ -316,9 +321,6 @@ header {
 
   object-fit: cover;
   object-position: center;
-}
-
-.quote__profile__main {
 }
 
 .quote__profile__name {
@@ -401,6 +403,7 @@ header {
   width: 100%;
   margin-right: 2em;
   border-radius: 1000px;
+
   border: none;
   font-size: 1.2rem;
   padding: 1em 2em;
