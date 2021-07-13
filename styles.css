@@ -13,7 +13,7 @@ html {
   --white: hsl(0, 0%, 100%);
   --gray: hsl(0, 0%, 80%);
 
-  --navbar-height: 120px;
+  --navbar-height: 200px;
 
   --colors-blue: hsl(198, 60%, 50%);
   --colors-cyan: hsl(176, 68%, 64%);
@@ -53,7 +53,7 @@ html {
 .nav__link {
   color: var(--gray);
   text-decoration: none;
-  margin-left: 3rem;
+  margin-left: 4rem;
   font-family: 'Raleway', sans-serif;
 }
 
@@ -286,7 +286,7 @@ header {
 }
 
 .quote {
-  font-size: 1.1rem;
+  font-size: 1rem;
 
   background-color: var(--bg-testimonial);
   margin: 20px;
@@ -298,7 +298,7 @@ header {
 }
 
 .quote__desc {
-  margin-top: 2em;
+  margin-top: 1em;
 }
 
 .quote__profile {
@@ -448,12 +448,12 @@ header {
 
   margin-top: 0;
   display: flex;
-  margin-bottom: 5em;
+  margin-bottom: 4em;
   width: 100%;
   justify-content: space-between;
 
   flex-wrap: wrap;
-  padding: 1em;
+  padding: 0 1em;
 }
 
 .footer__imageContainer {
