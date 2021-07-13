@@ -393,6 +393,22 @@ header {
 .footer__section--5 > * {
   margin-left: 1em;
 }
+
+.footer__section--5__iconContainer {
+  border: 1px solid white;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+}
+
+.footer__section--5__iconContainer > i {
+  font-size: 3rem;
+}
 /* Button*/
 .btn {
   font-size: 1rem;
