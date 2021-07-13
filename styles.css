@@ -112,7 +112,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 100px 0;
+  padding: 100px 10%;
 }
 
 .feats__inner {
@@ -121,12 +121,12 @@ header {
   gap: 100px 120px;
   justify-items: center;
   align-items: center;
-
   max-width: 850px;
 }
 
 .feat {
   text-align: center;
+  max-width: 23em;
 }
 
 .feat__imgContainer {
@@ -141,6 +141,12 @@ header {
 .feat__desc {
   margin-top: 0.8em;
   line-height: 1.8em;
+}
+
+@media only screen and (max-width: 800px) {
+  .feats__inner {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* productive */
